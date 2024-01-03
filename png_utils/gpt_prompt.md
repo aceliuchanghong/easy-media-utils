@@ -1,30 +1,29 @@
-对于处理MP4文件的包，提供转换为GIF、提取音频、裁剪视频、调整分辨率等功能以下是项目结构：
-
+对于处理MP3文件的包，提供 转文字 转srt mp3裁剪 mp3其他格式,eg:flac,WAV,AAC,Ogg,等互相转换等功能 以下是项目结构：
 ```
-mp4_utils/
+mp3_utils/
 │
 ├── __init__.py
 │
 ├── core/
 │   ├── __init__.py
-│   ├── mp4_handler.py  # 抽象类和核心功能
-│   └── exceptions.py   # 自定义异常
+│   ├── mp3_handler.py       # 抽象类和核心功能
+│   └── exceptions.py        # 自定义异常
 │
 ├── converters/
 │   ├── __init__.py
-│   ├── mp4_to_gif.py   # MP4转GIF功能
-│   ├── mp4_to_mp3.py   # MP4提取音频功能
-│   ├── tv_to_mp4.py    # 其他视频转MP4功能
-│   └── mp4_to_pngs.py   # MP4转pngs
+│   ├── mp3_to_text.py       # MP3转文字功能，可能使用语音识别API
+│   ├── mp3_to_srt.py        # MP3转SRT字幕文件功能
+│   └── audio_format_converter.py  # 通用音频格式转换功能
 │
 ├── editors/
 │   ├── __init__.py
-│   └── resizer.py      # 视频裁剪功能
+│   ├── trimmer.py           # MP3裁剪功能
+│   └── effects.py           # MP3音效处理功能
 │
 ├── utils/
 │   ├── __init__.py
-│   ├── mp4_utils.py    # MP4提取基本信息等
-│   └── file_utils.py   # 文件操作相关的辅助函数
+│   ├── mp3_utils.py         # MP3提取基本信息等
+│   └── file_utils.py        # 文件操作相关的辅助函数
 │
 └── tests/
     ├── __init__.py
@@ -32,55 +31,63 @@ mp4_utils/
     └── test_editors.py
 ```
 
-首先是exceptions.py，它定义了可能在处理MP4文件时遇到的自定义异常：
+首先是exceptions.py，它定义了可能在处理MP3文件时遇到的自定义异常：
 
 ```
-# mp4_utils/core/exceptions.py
-class MP4UtilsError(Exception):
-    """Base exception class for MP4 utils errors."""
+# mp3_utils/core/exceptions.py
+class AudioProcessingError(Exception):
+    """基础异常类，用于音频处理错误"""
     pass
 
-class InvalidFormatError(MP4UtilsError):
-    """Raised when an invalid format is provided for conversion."""
-    pass
+class FormatConversionError(AudioProcessingError):
+    """当格式转换失败时抛出"""
 
-class ConversionError(MP4UtilsError):
-    """Raised when a conversion process fails."""
-    pass
+    def __init__(self, source_format, target_format, message="Format conversion failed"):
+        self.source_format = source_format
+        self.target_format = target_format
+        self.message = f"{message}: {source_format} to {target_format}"
+        super().__init__(self.message)
 
-class EditingError(MP4UtilsError):
-    """Raised when an editing process fails."""
-    pass
+class FileHandlingError(AudioProcessingError):
+    """当文件操作出现问题时抛出"""
 
+    def __init__(self, filepath, message="Error handling file"):
+        self.filepath = filepath
+        self.message = f"{message}: {filepath}"
+        super().__init__(self.message)
+
+class SpeechRecognitionError(AudioProcessingError):
+    """当语音识别过程失败时抛出"""
+
+    def __init__(self, message="Speech recognition failed"):
+        self.message = message
+        super().__init__(self.message)
 ```
 
-接下来是mp4_handler.py，这里我们定义了一个抽象基类，它将被所有处理MP4的类继承：
+接下来是mp3_handler.py，这里我们定义了一个抽象基类，它将被所有处理MP3的类继承：
 
 ``` 
-# mp4_utils/core/mp4_handler.py
+# mp3_utils/core/mp3_handler.py
 from abc import ABC, abstractmethod
 import os
 
-class MP4Handler(ABC):
+class MP3Handler(ABC):
     """
-    Abstract base class for MP4 handling.
+    Abstract base class for MP3 handling.
     """
-
     def __init__(self, file_path):
         if not os.path.isfile(file_path):
             raise FileNotFoundError(f"The file {file_path} does not exist.")
-        if not file_path.lower().endswith('.mp4'):
-            raise ValueError("The file provided is not an MP4 file.")
+        # if not file_path.lower().endswith('.mp3'):
+        #     raise ValueError("The file provided is not an MP3 file.")
         self.file_path = file_path
-
     @abstractmethod
     def process(self, *args, **kwargs):
         """
-        Process the MP4 file. This method should be implemented by all subclasses.
+        Process the MP3 file. This method should be implemented by all subclasses.
         The specific arguments can vary depending on the processing task.
         """
         pass
-
     def _validate_output_path(self, output_path):
         """
         Validate the output path. If the path is a directory, create it if it doesn't exist.

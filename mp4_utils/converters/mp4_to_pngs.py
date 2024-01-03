@@ -24,7 +24,7 @@ class MP4ToPNGsConverter(MP4Handler):
 
         try:
             # Execute the command
-            subprocess.run(command, check=True, stdout=subprocess.DEVNULL)
+            subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         except subprocess.CalledProcessError as e:
             raise ConversionError(f"Failed to convert MP4 to {output_ext}s: {e}")
 

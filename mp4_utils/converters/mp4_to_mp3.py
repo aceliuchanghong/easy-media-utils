@@ -30,7 +30,7 @@ class MP4ToMP3Converter(MP4Handler):
 
         try:
             # Execute the command
-            subprocess.run(command, check=True, stdout=subprocess.DEVNULL)
+            subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         except subprocess.CalledProcessError as e:
             raise ConversionError(f"Failed to convert MP4 to MP3: {e}")
 
