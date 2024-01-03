@@ -34,16 +34,30 @@ class AudioFormatConverter(MP3Handler):
         """
         Use ffmpeg to convert the audio file to the target format.
         """
+        codec_map = {
+            'wav': 'pcm_s16le',  # Linear PCM codec for WAV format
+            'mp3': 'libmp3lame',  # MP3 codec
+            'flac': 'flac',  # FLAC codec
+            'aac': 'aac',  # AAC codec
+            'ogg': 'libvorbis',  # Vorbis codec for OGG format
+            'opus': 'libopus',  # Opus codec
+            'wma': 'wmav2'  # WMA codec
+        }
+        codec = codec_map.get(target_format)
+        if codec is None:
+            raise FormatConversionError(self.file_path.split('.')[-1], target_format,
+                                        "this project doesn't support " + target_format + " now")
+
         command = [
             'ffmpeg',
             '-i', self.file_path,  # Input file
-            '-acodec', target_format,  # Audio codec
+            '-acodec', codec,  # Audio codec
             '-y',  # Overwrite output file without asking
             output_path  # Output file
         ]
 
         try:
             # Execute the command
-            subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            subprocess.run(command, check=True)
         except subprocess.CalledProcessError as e:
             raise FormatConversionError(self.file_path.split('.')[-1], target_format, str(e))

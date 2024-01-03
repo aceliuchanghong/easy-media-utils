@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     conv_file = '../../testfiles/Sample.mkv'
 
-    converter_type = "other"
-    ans_path = mp4_out_path
-    converter = main(converter_type, conv_file)
+    converter_type = "img"
+    ans_path = pngs_out_path
+    converter = main(converter_type, file_path)
     converter.process(ans_path)

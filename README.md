@@ -25,3 +25,7 @@ When I am doing my job, I always want some utils to help me work better
 * 图片转灰白
 * 图片按比例剪切
 * 图片格式相互转换
+
+```
+pip freeze > requirements.txt
+```
