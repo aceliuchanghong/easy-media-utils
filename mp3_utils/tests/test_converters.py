@@ -1,6 +1,5 @@
 from mp3_utils.converters.audio_format_converter import AudioFormatConverter
 from mp3_utils.converters.mp3_to_srt import MP3ToSRTConverter
-from mp3_utils.converters.mp3_to_text import MP3ToTXTConverter
 from mp3_utils.core.mp3_handler import MP3Handler
 
 
@@ -13,7 +12,6 @@ def main(converter_type, file_path='../../testfiles/out/output.mp3') -> MP3Handl
     Converter = {
         "format": AudioFormatConverter,
         "srt": MP3ToSRTConverter,
-        "txt": MP3ToTXTConverter,
     }
     converter = Converter.get(converter_type)(file_path)
 

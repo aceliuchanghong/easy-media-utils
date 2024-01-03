@@ -11,7 +11,6 @@ mp3_utils/
 │
 ├── converters/
 │   ├── __init__.py
-│   ├── mp3_to_text.py       # MP3转文字功能，可能使用语音识别API
 │   ├── mp3_to_srt.py        # MP3转SRT字幕文件功能
 │   └── audio_format_converter.py  # 通用音频格式转换功能
 │
@@ -121,7 +120,4 @@ class MP3Handler(ABC):
         try:
             # Execute the command
             subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-基于以上帮我使用ffmpeg完善mp4_to_mp3.py
-基于以上帮我使用ffmpeg完善mp4_to_pngs.py,使得视频可以逐帧输出到某个文件夹
-基于以上帮我使用ffmpeg完善resizer.py
 ```

@@ -1,4 +1,5 @@
 # mp3_utils/converters/mp3_to_srt.py
+# https://github.com/chidiwilliams/buzz
 import subprocess
 from ..core.mp3_handler import MP3Handler
 from ..core.exceptions import FormatConversionError
