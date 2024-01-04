@@ -1,38 +1,38 @@
-# setup.py
-
 from setuptools import setup, find_packages
 
 setup(
-    name='python_utils',
-    version='0.1.0',
+    name='python-utils',
+    version='0.1.0',  # TODO: Set your package's version number here
     author='Sisconsavior',
     author_email='aceliuchanghong@gmail.com',
     packages=find_packages(),
     url='https://github.com/aceliuchanghong/python-utils.git',
-    license='LICENSE',
-    description='An utility package for usua program processing.',
+    license='LICENSE',  # TODO: If you have a license file, put its name here
+    description='A collection of Python utilities for handling media files.',  # TODO: Write a short description here
     long_description=open('README.md').read(),
-    install_requires=[
-        # 添加你的包依赖的其他Python包列表
-        # 例如:
-        # 'moviepy>=1.0.0',
-    ],
+    long_description_content_type='text/markdown',
+    install_requires=open('requirements.txt').read().splitlines(),
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 3 - Alpha',  # TODO: Choose the Development Status
         'Intended Audience :: Developers',
-        'Natural Language :: English',
-        'Programming Language :: Python :: 3.9',
-        'Programming Language :: Python :: 3.10',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'License :: OSI Approved :: MIT License',  # TODO: Choose your license
         'Programming Language :: Python :: 3.11',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
     ],
-    python_requires='>=3.9',
+    python_requires='>=3.6',  # TODO: Specify the Python version requirements
+    include_package_data=True,
+    keywords='media handling image audio video conversion editing',  # TODO: Add some keywords for your package
+    # TODO: Add any additional package data here
+    package_data={
+        # If any package contains *.txt or *.rst files, include them:
+        '': ['*.md', '*.txt'],
+        # And include any *.msg files found in the 'hello' package, too:
+        'hello': ['*.msg'],
+    },
+    # TODO: Add any scripts or entry points here
     entry_points={
         'console_scripts': [
-            # 如果你的包提供了一个或多个脚本，可以在这里添加
-            # 例如:
-            # 'mp4_to_gif=mp4_utils.converters.mp4_to_gif:main',
+            'your_script = your_package.some_module:main_func',
         ],
     },
 )
