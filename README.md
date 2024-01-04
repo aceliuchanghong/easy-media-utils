@@ -1,4 +1,4 @@
-# python-utils
+# image-utils
 
 When I am doing my job, I always want some utils to help me work better
 
@@ -26,6 +26,12 @@ When I am doing my job, I always want some utils to help me work better
 * 图片按比例剪切
 * 图片格式相互转换
 
+# install
 ```
-pip freeze > requirements.txt
+# pip freeze > requirements.txt
+pip install -r requirements.txt
+```
+前往ffmpeg官网,下载对应版本的文件,解压放在本地文件并且配置环境变量,确保可以访问到
+```
+ffmpeg -version
 ```

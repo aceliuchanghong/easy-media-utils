@@ -38,10 +38,23 @@ class AudioFormatConverter(MP3Handler):
             'wav': 'pcm_s16le',  # Linear PCM codec for WAV format
             'mp3': 'libmp3lame',  # MP3 codec
             'flac': 'flac',  # FLAC codec
-            'aac': 'aac',  # AAC codec
+            'aac': 'aac',  # AAC codec for AAC format (in an ADTS container)
+            'm4a': 'aac',  # AAC codec for M4A format (typically in an MP4/M4A container)
             'ogg': 'libvorbis',  # Vorbis codec for OGG format
-            'opus': 'libopus',  # Opus codec
-            'wma': 'wmav2'  # WMA codec
+            'opus': 'libopus',  # Opus codec for OPUS format
+            'wma': 'wmav2',  # WMA codec
+            'alac': 'alac',  # Apple Lossless Audio Codec for M4A format
+            'ac3': 'ac3',  # Dolby Digital AC-3 codec
+            'eac3': 'eac3',  # Enhanced AC-3 codec
+            'dts': 'dca',  # DTS Coherent Acoustics codec
+            'mp2': 'mp2',  # MP2 (MPEG Audio Layer 2) codec
+            'amr': 'libopencore_amrnb',  # Adaptive Multi-Rate NarrowBand codec
+            'amr-wb': 'libvo_amrwbenc',  # Adaptive Multi-Rate WideBand codec
+            'pcm_mulaw': 'pcm_mulaw',  # G.711 mu-law
+            'pcm_alaw': 'pcm_alaw',  # G.711 A-law
+            'g722': 'g722',  # G.722 ADPCM
+            'spx': 'libspeex',  # Speex codec
+            'aiiff': 'pcm_s16be',  # PCM codec for AIFF format
         }
         codec = codec_map.get(target_format)
         if codec is None:
