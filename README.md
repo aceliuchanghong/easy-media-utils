@@ -3,33 +3,33 @@
 When I am doing my job, I always want some utils to help me work better
 
 ```
-研究下这个:
+�о������:
 https://github.com/BetaSu/second-curve/blob/main/docs/idea/flow.md
 ```
 
-## mp4处理
+## mp4����
 
-* 转png/jpg等
-* 转mp3
-* 转gif
-* 转竖屏
-* 其他格式视频转mp4
+* תpng/jpg��
+* תmp3
+* תgif
+* ת����
+* ������ʽ��Ƶתmp4
 
-## mp3处理
+## mp3����
 
-* 转文字
-* 转srt
-* mp3裁剪
-* mp3其他格式,eg:flac,WAV,AAC,Ogg,等互相转换
+* ת����
+* תsrt
+* mp3�ü�
+* mp3������ʽ,eg:flac,WAV,AAC,Ogg,�Ȼ���ת��
 
-## 图片png/jpg处理
+## ͼƬpng/jpg����
 
-* 添加文字
-* 图片文字识别
-* 图片按比例放缩/图片旋转
-* 图片转灰白
-* 图片按比例剪切
-* 图片格式相互转换
+* ��������
+* ͼƬ����ʶ��
+* ͼƬ����������/ͼƬ��ת
+* ͼƬת�Ұ�
+* ͼƬ����������
+* ͼƬ��ʽ�໥ת��
 
 # install
 
@@ -40,7 +40,7 @@ conda activate dealMedia
 pip install -r requirements.txt
 ```
 
-前往ffmpeg官网,下载对应版本的文件,解压放在本地文件并且配置环境变量,确保可以访问到
+ǰ��ffmpeg����,���ض�Ӧ�汾���ļ�,��ѹ���ڱ����ļ��������û�������,ȷ�����Է��ʵ�
 
 ```
 ffmpeg -version

@@ -58,7 +58,7 @@ def split_video(video_path, duration, output_dir=None):
 
 # 使用示例
 if __name__ == "__main__":
-    video_path = '../../testfiles/onboard_cover.mp4'
+    video_path = '../../testfiles/out/onboard_cover.mp4'
     info = get_video_info(video_path)
     if info:
         print(f"Video size: {info['size']} bytes")

@@ -65,5 +65,5 @@ def print_tree(directory=None, prefix='', ignore_patterns=None, root_directory=N
 
 
 if __name__ == "__main__":
-    now = 'D:\\aprojectPython\\pythonProject\\python-utils\\image_utils'
+    now = 'D:\\aprojectPython\\pythonProject\\media-utils'
     print_tree(now)

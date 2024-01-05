@@ -25,9 +25,7 @@ media_utils/
     ├── editors/
     │   ├── __init__.py
     │   ├── resizer.py           # 图片按比例放缩和旋转功能
-    │   ├── cropper.py           # 图片按比例剪切功能
-    │   ├── color_converter.py   # 图片颜色转换，如转灰白
-    │   └── effects.py           # 图片效果处理功能，如滤镜等
+    │   └── cropper.py           # 图片按比例剪切功能
     │
     ├── utils/
     │   ├── __init__.py

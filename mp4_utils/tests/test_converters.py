@@ -25,13 +25,13 @@ def main(converter_type, file_path='../../testfiles/onboard_cover.mp4') -> MP4Ha
 
 
 if __name__ == "__main__":
-    file_path = '../../testfiles/onboard_cover.mp4'
+    file_path = '../../testfiles/out/onboard_cover.mp4'
     gif_out_path = '../../testfiles/out/output.gif'
     mp3_out_path = '../../testfiles/out/output.mp3'
     pngs_out_path = '../../testfiles/out/pngs_output'
     mp4_out_path = '../../testfiles/out/Sample.mp4'
 
-    conv_file = '../../testfiles/Sample.mkv'
+    conv_file = '../../testfiles/out/Sample.mkv'
 
     converter_type = "img"
     ans_path = pngs_out_path
