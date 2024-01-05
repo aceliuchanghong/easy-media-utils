@@ -19,7 +19,7 @@ media_utils/
     ├── converters/
     │   ├── __init__.py
     │   ├── image_to_text.py     # 图片文字识别功能，可能使用OCR技术
-    │   ├── text_to_image.py     # 在图片上添加文字
+    │   ├── text_add_to_image.py.py     # 在图片上添加文字
     │   └── format_converter.py  # 图片格式之间的转换功能
     │
     ├── editors/

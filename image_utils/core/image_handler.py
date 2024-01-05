@@ -2,7 +2,7 @@
 from base_model.MediaHandler import MediaHandler
 
 
-class IMAGEHandler(MediaHandler):
+class ImageHandler(MediaHandler):
     """
     Class for handling PNG files.
     """

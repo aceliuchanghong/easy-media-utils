@@ -1,7 +1,10 @@
 # image-utils
 
 When I am doing my job, I always want some utils to help me work better
-
+```
+研究下这个:
+https://github.com/BetaSu/second-curve/blob/main/docs/idea/flow.md
+```
 ## mp4处理
 
 * 转png/jpg等

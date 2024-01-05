@@ -19,7 +19,9 @@ def is_ignored(path, ignore_patterns):
     return False
 
 
-def print_tree(directory, prefix='', ignore_patterns=None, root_directory=None):
+def print_tree(directory=None, prefix='', ignore_patterns=None, root_directory=None):
+    if directory is None:
+        directory = os.path.dirname(os.path.abspath(__file__))
     if root_directory is None:
         root_directory = directory  # Set the root directory
         ignore_patterns = read_gitignore(root_directory)  # Read .gitignore patterns
@@ -62,5 +64,6 @@ def print_tree(directory, prefix='', ignore_patterns=None, root_directory=None):
         print_tree(next_dir, next_prefix, ignore_patterns, root_directory)
 
 
-# Output project structure
-print_tree('D:\\aprojectPython\\pythonProject\\python-utils')
+if __name__ == "__main__":
+    now = 'D:\\aprojectPython\\pythonProject\\python-utils\\image_utils'
+    print_tree(now)

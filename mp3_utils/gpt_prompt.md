@@ -17,7 +17,7 @@ media_utils/
     │
     ├── converters/
     │   ├── __init__.py
-    │   ├── mp3_to_srt.py        # MP3转SRT字幕文件功能
+    │   ├── mp3_to_text.py       # MP3转SRT字幕文件功能
     │   └── audio_format_converter.py  # 通用音频格式转换功能
     │
     ├── editors/
