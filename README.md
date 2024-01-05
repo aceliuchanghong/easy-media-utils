@@ -3,33 +3,32 @@
 When I am doing my job, I always want some utils to help me work better
 
 ```
-ÑĞ¾¿ÏÂÕâ¸ö:
-https://github.com/BetaSu/second-curve/blob/main/docs/idea/flow.md
+git clone https://github.com/aceliuchanghong/easy-media-utils.git
 ```
 
-## mp4´¦Àí
+## mp4å¤„ç†
 
-* ×ªpng/jpgµÈ
-* ×ªmp3
-* ×ªgif
-* ×ªÊúÆÁ
-* ÆäËû¸ñÊ½ÊÓÆµ×ªmp4
+* è½¬png/jpgç­‰
+* è½¬mp3
+* è½¬gif
+* è½¬ç«–å±
+* å…¶ä»–æ ¼å¼è§†é¢‘è½¬mp4
 
-## mp3´¦Àí
+## mp3å¤„ç†
 
-* ×ªÎÄ×Ö
-* ×ªsrt
-* mp3²Ã¼ô
-* mp3ÆäËû¸ñÊ½,eg:flac,WAV,AAC,Ogg,µÈ»¥Ïà×ª»»
+* è½¬æ–‡å­—
+* è½¬srt
+* mp3è£å‰ª
+* mp3å…¶ä»–æ ¼å¼,eg:flac,WAV,AAC,Ogg,ç­‰äº’ç›¸è½¬æ¢
 
-## Í¼Æ¬png/jpg´¦Àí
+## å›¾ç‰‡png/jpgå¤„ç†
 
-* Ìí¼ÓÎÄ×Ö
-* Í¼Æ¬ÎÄ×ÖÊ¶±ğ
-* Í¼Æ¬°´±ÈÀı·ÅËõ/Í¼Æ¬Ğı×ª
-* Í¼Æ¬×ª»Ò°×
-* Í¼Æ¬°´±ÈÀı¼ôÇĞ
-* Í¼Æ¬¸ñÊ½Ïà»¥×ª»»
+* æ·»åŠ æ–‡å­—
+* å›¾ç‰‡æ–‡å­—è¯†åˆ«
+* å›¾ç‰‡æŒ‰æ¯”ä¾‹æ”¾ç¼©/å›¾ç‰‡æ—‹è½¬
+* å›¾ç‰‡è½¬ç°ç™½
+* å›¾ç‰‡æŒ‰æ¯”ä¾‹å‰ªåˆ‡
+* å›¾ç‰‡æ ¼å¼ç›¸äº’è½¬æ¢
 
 # install
 
@@ -40,7 +39,7 @@ conda activate dealMedia
 pip install -r requirements.txt
 ```
 
-Ç°Íùffmpeg¹ÙÍø,ÏÂÔØ¶ÔÓ¦°æ±¾µÄÎÄ¼ş,½âÑ¹·ÅÔÚ±¾µØÎÄ¼ş²¢ÇÒÅäÖÃ»·¾³±äÁ¿,È·±£¿ÉÒÔ·ÃÎÊµ½
+å‰å¾€ffmpegå®˜ç½‘,ä¸‹è½½å¯¹åº”ç‰ˆæœ¬çš„æ–‡ä»¶,è§£å‹æ”¾åœ¨æœ¬åœ°æ–‡ä»¶å¹¶ä¸”é…ç½®ç¯å¢ƒå˜é‡,ç¡®ä¿å¯ä»¥è®¿é—®åˆ°
 
 ```
 ffmpeg -version
