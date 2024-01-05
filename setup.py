@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='easy-media-utils',
-    version='0.1.0',  # Update the version number for new releases
+    version='0.1.1',  # Update the version number for new releases
     author='Sisconsavior',
     author_email='aceliuchanghong@gmail.com',
     packages=find_packages(),
-    url='https://github.com/aceliuchanghong/media-utils.git',
+    url='https://github.com/aceliuchanghong/easy-media-utils.git',
     license='LICENSE',  # If you have a license file, specify its name here, e.g., 'LICENSE.txt'
     description='A collection of Python utilities for handling media files.',
     long_description=open('README.md').read(),

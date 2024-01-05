@@ -1,46 +1,82 @@
-# image-utils
+## image-utils
 
-When I am doing my job, I always want some utils to help me work better
+When I am dealing pics,mp3,mp4.. I always want a media utils to help me work, that's why this project start
 
+### mp4´¦Àí
+
+* ×ªpng/jpgµÈ
+* ×ªmp3
+* ×ªgif
+* ×ªÊúÆÁ
+* ÆäËû¸ñÊ½ÊÓÆµ×ªmp4
+
+### mp3´¦Àí
+
+* ×ªÎÄ×Ö
+* ×ªsrt
+* mp3²Ã¼ô
+* mp3ÆäËû¸ñÊ½,eg:flac,WAV,AAC,Ogg,µÈ»¥Ïà×ª»»
+
+### Í¼Æ¬png/jpg´¦Àí
+
+* Ìí¼ÓÎÄ×Ö
+* Í¼Æ¬ÎÄ×ÖÊ¶±ğ
+* Í¼Æ¬°´±ÈÀı·ÅËõ/Í¼Æ¬Ğı×ª
+* Í¼Æ¬×ª»Ò°×
+* Í¼Æ¬°´±ÈÀı¼ôÇĞ
+* Í¼Æ¬¸ñÊ½Ïà»¥×ª»»
+
+### install
 ```
-git clone https://github.com/aceliuchanghong/easy-media-utils.git
+pip install easy-media-utils
 ```
-
-## mp4å¤„ç†
-
-* è½¬png/jpgç­‰
-* è½¬mp3
-* è½¬gif
-* è½¬ç«–å±
-* å…¶ä»–æ ¼å¼è§†é¢‘è½¬mp4
-
-## mp3å¤„ç†
-
-* è½¬æ–‡å­—
-* è½¬srt
-* mp3è£å‰ª
-* mp3å…¶ä»–æ ¼å¼,eg:flac,WAV,AAC,Ogg,ç­‰äº’ç›¸è½¬æ¢
-
-## å›¾ç‰‡png/jpgå¤„ç†
-
-* æ·»åŠ æ–‡å­—
-* å›¾ç‰‡æ–‡å­—è¯†åˆ«
-* å›¾ç‰‡æŒ‰æ¯”ä¾‹æ”¾ç¼©/å›¾ç‰‡æ—‹è½¬
-* å›¾ç‰‡è½¬ç°ç™½
-* å›¾ç‰‡æŒ‰æ¯”ä¾‹å‰ªåˆ‡
-* å›¾ç‰‡æ ¼å¼ç›¸äº’è½¬æ¢
-
-# install
-
-```
+<details>
+<summary>Ô´Âë°²×°(µã»÷Õ¹¿ª) </summary>
 # pip freeze > requirements.txt
+
+git clone https://github.com/aceliuchanghong/easy-media-utils.git
+
 conda create -n dealMedia python=3.11
+
 conda activate dealMedia
+
 pip install -r requirements.txt
-```
+</details>
 
-å‰å¾€ffmpegå®˜ç½‘,ä¸‹è½½å¯¹åº”ç‰ˆæœ¬çš„æ–‡ä»¶,è§£å‹æ”¾åœ¨æœ¬åœ°æ–‡ä»¶å¹¶ä¸”é…ç½®ç¯å¢ƒå˜é‡,ç¡®ä¿å¯ä»¥è®¿é—®åˆ°
-
+### ffmpeg
+Ç°Íù¹ÙÍø,ÏÂÔØ¶ÔÓ¦°æ±¾µÄÎÄ¼ş,½âÑ¹·ÅÔÚ±¾µØÎÄ¼ş²¢ÇÒÅäÖÃ»·¾³±äÁ¿,È·±£¿ÉÒÔ·ÃÎÊµ½
 ```
 ffmpeg -version
+```
+### e.g.
+```
+def main(converter_type, file_path='../../testfiles/onboard_cover.mp4') -> MP4Handler:
+    """
+    Convert MP4 each frame.
+    :param converter_type:
+    :param file_path:
+    """
+    Converter = {
+        "gif": MP4ToGIFConverter,
+        "mp3": MP4ToMP3Converter,
+        "img": MP4ToPNGsConverter,
+        "other": TVToMP4Converter,
+    }
+    # converter = Converter[converter_type](file_path)
+    converter = Converter.get(converter_type)(file_path)
+    return converter
+
+if __name__ == "__main__":
+    file_path = '../../testfiles/out/onboard_cover.mp4'
+    gif_out_path = '../../testfiles/out/output.gif'
+    mp3_out_path = '../../testfiles/out/output.mp3'
+    pngs_out_path = '../../testfiles/out/pngs_output'
+    mp4_out_path = '../../testfiles/out/Sample.mp4'
+
+    conv_file = '../../testfiles/out/Sample.mkv'
+
+    converter_type = "img"
+    ans_path = pngs_out_path
+    converter = main(converter_type, file_path)
+    converter.process(ans_path)
 ```
