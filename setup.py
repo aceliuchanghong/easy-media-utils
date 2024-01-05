@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='media-utils',
+    name='easy-media-utils',
     version='0.1.0',  # Update the version number for new releases
     author='Sisconsavior',
     author_email='aceliuchanghong@gmail.com',
