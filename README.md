@@ -2,29 +2,29 @@
 
 When I am dealing pics,mp3,mp4.. I always want a media utils to help me work, that's why this project start
 
-### mp4´¦Àí
+### mp4å¤„ç†
 
-* ×ªpng/jpgµÈ
-* ×ªmp3
-* ×ªgif
-* ×ªÊúÆÁ
-* ÆäËû¸ñÊ½ÊÓÆµ×ªmp4
+* è½¬png/jpgç­‰
+* è½¬mp3
+* è½¬gif
+* è½¬ç«–å±
+* å…¶ä»–æ ¼å¼è§†é¢‘è½¬mp4
 
-### mp3´¦Àí
+### mp3å¤„ç†
 
-* ×ªÎÄ×Ö
-* ×ªsrt
-* mp3²Ã¼ô
-* mp3ÆäËû¸ñÊ½,eg:flac,WAV,AAC,Ogg,µÈ»¥Ïà×ª»»
+* è½¬æ–‡å­—
+* è½¬srt
+* mp3è£å‰ª
+* mp3å…¶ä»–æ ¼å¼,eg:flac,WAV,AAC,Ogg,ç­‰äº’ç›¸è½¬æ¢
 
-### Í¼Æ¬png/jpg´¦Àí
+### å›¾ç‰‡png/jpgå¤„ç†
 
-* Ìí¼ÓÎÄ×Ö
-* Í¼Æ¬ÎÄ×ÖÊ¶±ğ
-* Í¼Æ¬°´±ÈÀı·ÅËõ/Í¼Æ¬Ğı×ª
-* Í¼Æ¬×ª»Ò°×
-* Í¼Æ¬°´±ÈÀı¼ôÇĞ
-* Í¼Æ¬¸ñÊ½Ïà»¥×ª»»
+* æ·»åŠ æ–‡å­—
+* å›¾ç‰‡æ–‡å­—è¯†åˆ«
+* å›¾ç‰‡æŒ‰æ¯”ä¾‹æ”¾ç¼©/å›¾ç‰‡æ—‹è½¬
+* å›¾ç‰‡è½¬ç°ç™½
+* å›¾ç‰‡æŒ‰æ¯”ä¾‹å‰ªåˆ‡
+* å›¾ç‰‡æ ¼å¼ç›¸äº’è½¬æ¢
 
 ### install
 
@@ -33,7 +33,7 @@ pip install easy-media-utils
 ```
 
 <details>
-<summary>Ô´Âë°²×°(µã»÷Õ¹¿ª) </summary>
+<summary>æºç å®‰è£…(ç‚¹å‡»å±•å¼€) </summary>
 # pip freeze > requirements.txt
 
 git clone https://github.com/aceliuchanghong/easy-media-utils.git
@@ -47,16 +47,16 @@ pip install -r requirements.txt
 
 ### ffmpeg
 
-Ç°Íù¹ÙÍø,ÏÂÔØ¶ÔÓ¦°æ±¾µÄÎÄ¼ş,½âÑ¹·ÅÔÚ±¾µØÎÄ¼ş²¢ÇÒÅäÖÃ»·¾³±äÁ¿,È·±£¿ÉÒÔ·ÃÎÊµ½
+å‰å¾€å®˜ç½‘,ä¸‹è½½å¯¹åº”ç‰ˆæœ¬çš„æ–‡ä»¶,è§£å‹æ”¾åœ¨æœ¬åœ°æ–‡ä»¶å¹¶ä¸”é…ç½®ç¯å¢ƒå˜é‡,ç¡®ä¿å¯ä»¥è®¿é—®åˆ°
 
 ```
 ffmpeg -version
 ```
 
-### ÏîÄ¿½á¹¹
+### é¡¹ç›®ç»“æ„
 
 <details>
-<summary>ÏîÄ¿½á¹¹Éú³É(µã»÷Õ¹¿ª) </summary>
+<summary>é¡¹ç›®ç»“æ„ç”Ÿæˆ(ç‚¹å‡»å±•å¼€) </summary>
 from tests.struct_tree_out import print_tree
 path = 'D:\\aprojectPython\\pythonProject\\easy-media-utils'
 print_tree(path)
@@ -65,105 +65,105 @@ print_tree(path)
 ```
 easy-media-utils/
 |
-©À©¤©¤ LICENSE
-©À©¤©¤ README.md
-©À©¤©¤ requirements.txt
-©À©¤©¤ setup.py
-©À©¤©¤ base_model/
-©¦   ©À©¤©¤ MediaHandler.py
-©¦   ©À©¤©¤ __init__.py
-©¦   ©¸©¤©¤ __pycache__/
-©À©¤©¤ build/
-©À©¤©¤ dist/
-©À©¤©¤ easy_media_utils.egg-info/
-©À©¤©¤ image_utils/
-©¦   ©À©¤©¤ __init__.py
-©¦   ©À©¤©¤ gpt_prompt.md
-©¦   ©À©¤©¤ __pycache__/
-©¦   ©À©¤©¤ converters/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ format_converter.py
-©¦   ©¦   ©À©¤©¤ image_to_text.py
-©¦   ©¦   ©À©¤©¤ text_add_to_image.py
-©¦   ©¦   ©¸©¤©¤ __pycache__/
-©¦   ©À©¤©¤ core/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ exceptions.py
-©¦   ©¦   ©À©¤©¤ image_handler.py
-©¦   ©¦   ©¸©¤©¤ __pycache__/
-©¦   ©À©¤©¤ editors/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ cropper.py
-©¦   ©¦   ©¸©¤©¤ resizer.py
-©¦   ©À©¤©¤ tests/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ test_converters.py
-©¦   ©¦   ©À©¤©¤ test_editors.py
-©¦   ©¦   ©À©¤©¤ test_utils.py
-©¦   ©¦   ©¸©¤©¤ __pycache__/
-©¦   ©¸©¤©¤ utils/
-©¦       ©À©¤©¤ __init__.py
-©¦       ©¸©¤©¤ image_utils.py
-©À©¤©¤ mp3_utils/
-©¦   ©À©¤©¤ __init__.py
-©¦   ©À©¤©¤ gpt_prompt.md
-©¦   ©À©¤©¤ __pycache__/
-©¦   ©À©¤©¤ converters/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ audio_format_converter.py
-©¦   ©¦   ©À©¤©¤ mp3_to_text.py
-©¦   ©¦   ©¸©¤©¤ __pycache__/
-©¦   ©À©¤©¤ core/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ exceptions.py
-©¦   ©¦   ©À©¤©¤ mp3_handler.py
-©¦   ©¦   ©¸©¤©¤ __pycache__/
-©¦   ©À©¤©¤ editors/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ effects.py
-©¦   ©¦   ©¸©¤©¤ trimmer.py
-©¦   ©À©¤©¤ tests/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ test_converters.py
-©¦   ©¦   ©¸©¤©¤ test_editors.py
-©¦   ©¸©¤©¤ utils/
-©¦       ©À©¤©¤ __init__.py
-©¦       ©¸©¤©¤ mp3_utils.py
-©À©¤©¤ mp4_utils/
-©¦   ©À©¤©¤ __init__.py
-©¦   ©À©¤©¤ gpt_prompt.md
-©¦   ©À©¤©¤ __pycache__/
-©¦   ©À©¤©¤ converters/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ mp4_to_gif.py
-©¦   ©¦   ©À©¤©¤ mp4_to_mp3.py
-©¦   ©¦   ©À©¤©¤ mp4_to_pngs.py
-©¦   ©¦   ©À©¤©¤ tv_to_mp4.py
-©¦   ©¦   ©¸©¤©¤ __pycache__/
-©¦   ©À©¤©¤ core/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ exceptions.py
-©¦   ©¦   ©À©¤©¤ mp4_handler.py
-©¦   ©¦   ©¸©¤©¤ __pycache__/
-©¦   ©À©¤©¤ editors/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ orientation.py
-©¦   ©¦   ©¸©¤©¤ resizer.py
-©¦   ©À©¤©¤ tests/
-©¦   ©¦   ©À©¤©¤ __init__.py
-©¦   ©¦   ©À©¤©¤ test_converters.py
-©¦   ©¦   ©¸©¤©¤ test_editors.py
-©¦   ©¸©¤©¤ utils/
-©¦       ©À©¤©¤ __init__.py
-©¦       ©À©¤©¤ file_utils.py
-©¦       ©À©¤©¤ mp4_utils.py
-©¦       ©¸©¤©¤ __pycache__/
-©À©¤©¤ testfiles/
-©¦   ©¸©¤©¤ out/
-©À©¤©¤ tests/
-©¦   ©À©¤©¤ __init__.py
-©¦   ©¸©¤©¤ struct_tree_out.py
-©¸©¤©¤ venv/
+â”œâ”€â”€ LICENSE
+â”œâ”€â”€ README.md
+â”œâ”€â”€ requirements.txt
+â”œâ”€â”€ setup.py
+â”œâ”€â”€ base_model/
+â”‚   â”œâ”€â”€ MediaHandler.py
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â””â”€â”€ __pycache__/
+â”œâ”€â”€ build/
+â”œâ”€â”€ dist/
+â”œâ”€â”€ easy_media_utils.egg-info/
+â”œâ”€â”€ image_utils/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ gpt_prompt.md
+â”‚   â”œâ”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ converters/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ format_converter.py
+â”‚   â”‚   â”œâ”€â”€ image_to_text.py
+â”‚   â”‚   â”œâ”€â”€ text_add_to_image.py
+â”‚   â”‚   â””â”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ core/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ exceptions.py
+â”‚   â”‚   â”œâ”€â”€ image_handler.py
+â”‚   â”‚   â””â”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ editors/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ cropper.py
+â”‚   â”‚   â””â”€â”€ resizer.py
+â”‚   â”œâ”€â”€ tests/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ test_converters.py
+â”‚   â”‚   â”œâ”€â”€ test_editors.py
+â”‚   â”‚   â”œâ”€â”€ test_utils.py
+â”‚   â”‚   â””â”€â”€ __pycache__/
+â”‚   â””â”€â”€ utils/
+â”‚       â”œâ”€â”€ __init__.py
+â”‚       â””â”€â”€ image_utils.py
+â”œâ”€â”€ mp3_utils/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ gpt_prompt.md
+â”‚   â”œâ”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ converters/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ audio_format_converter.py
+â”‚   â”‚   â”œâ”€â”€ mp3_to_text.py
+â”‚   â”‚   â””â”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ core/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ exceptions.py
+â”‚   â”‚   â”œâ”€â”€ mp3_handler.py
+â”‚   â”‚   â””â”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ editors/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ effects.py
+â”‚   â”‚   â””â”€â”€ trimmer.py
+â”‚   â”œâ”€â”€ tests/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ test_converters.py
+â”‚   â”‚   â””â”€â”€ test_editors.py
+â”‚   â””â”€â”€ utils/
+â”‚       â”œâ”€â”€ __init__.py
+â”‚       â””â”€â”€ mp3_utils.py
+â”œâ”€â”€ mp4_utils/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ gpt_prompt.md
+â”‚   â”œâ”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ converters/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ mp4_to_gif.py
+â”‚   â”‚   â”œâ”€â”€ mp4_to_mp3.py
+â”‚   â”‚   â”œâ”€â”€ mp4_to_pngs.py
+â”‚   â”‚   â”œâ”€â”€ tv_to_mp4.py
+â”‚   â”‚   â””â”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ core/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ exceptions.py
+â”‚   â”‚   â”œâ”€â”€ mp4_handler.py
+â”‚   â”‚   â””â”€â”€ __pycache__/
+â”‚   â”œâ”€â”€ editors/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ orientation.py
+â”‚   â”‚   â””â”€â”€ resizer.py
+â”‚   â”œâ”€â”€ tests/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ test_converters.py
+â”‚   â”‚   â””â”€â”€ test_editors.py
+â”‚   â””â”€â”€ utils/
+â”‚       â”œâ”€â”€ __init__.py
+â”‚       â”œâ”€â”€ file_utils.py
+â”‚       â”œâ”€â”€ mp4_utils.py
+â”‚       â””â”€â”€ __pycache__/
+â”œâ”€â”€ testfiles/
+â”‚   â””â”€â”€ out/
+â”œâ”€â”€ tests/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â””â”€â”€ struct_tree_out.py
+â””â”€â”€ venv/
 ```
 
 ### e.g.
@@ -239,7 +239,7 @@ from image_utils.converters.format_converter import FormatConverter
 
 test_image_path = "../../testfiles/out/pngs_output/frame_0001.png"
 output_path = "../../testfiles/out/imgs_output"
-txt = "ÄãºÃ"
+txt = "ä½ å¥½"
 
 if __name__ == '__main__':
     converter = FormatConverter(test_image_path)
