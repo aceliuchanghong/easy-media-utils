@@ -1,10 +1,12 @@
 # image-utils
 
 When I am doing my job, I always want some utils to help me work better
+
 ```
 研究下这个:
 https://github.com/BetaSu/second-curve/blob/main/docs/idea/flow.md
 ```
+
 ## mp4处理
 
 * 转png/jpg等
@@ -30,11 +32,16 @@ https://github.com/BetaSu/second-curve/blob/main/docs/idea/flow.md
 * 图片格式相互转换
 
 # install
+
 ```
 # pip freeze > requirements.txt
+conda create -n dealMedia python=3.11
+conda activate dealMedia
 pip install -r requirements.txt
 ```
+
 前往ffmpeg官网,下载对应版本的文件,解压放在本地文件并且配置环境变量,确保可以访问到
+
 ```
 ffmpeg -version
 ```

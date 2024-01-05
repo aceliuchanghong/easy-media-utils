@@ -148,7 +148,7 @@ class ImageHandler(MediaHandler):
 ```
 
 ```
-基于以上帮我使用ffmpeg完善 mp4_to_gif.py,我能想到的参数比如 output_path 等
+基于以上帮我使用ffmpeg完善 cropper.py继承ImageHandler,我能想到的参数比如 output_path 等
          核心代码参考:command = [
             'ffmpeg',
             '-ss', start_time,  # Start time

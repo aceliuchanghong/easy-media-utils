@@ -11,7 +11,7 @@ class FormatConverter(ImageHandler):
     def __init__(self, file_path):
         super().__init__(file_path)
 
-    def convert_format(self, output_path, target_format):
+    def process(self, output_path, target_format):
         """
         Convert the image to a different format using ffmpeg.
         :param output_path: Path to save the converted image.

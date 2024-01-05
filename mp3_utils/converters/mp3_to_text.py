@@ -1,7 +1,7 @@
 # mp3_utils/converters/mp3_to_text.py
 # https://github.com/SYSTRAN/faster-whisper
+# 此部分打算放在服务器
 from ..core.mp3_handler import MP3Handler
-from ..core.exceptions import FormatConversionError
 
 
 class MP3ToTEXTConverter(MP3Handler):
