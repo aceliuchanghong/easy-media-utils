@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='easy-media-utils',
-    version='0.1.2',  # Update the version number for new releases
+    version='0.1.3',  # Update the version number for new releases
     author='Sisconsavior',
     author_email='aceliuchanghong@gmail.com',
     packages=find_packages(),

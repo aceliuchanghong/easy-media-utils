@@ -53,6 +53,119 @@ pip install -r requirements.txt
 ffmpeg -version
 ```
 
+### 项目结构
+
+<details>
+<summary>项目结构生成(点击展开) </summary>
+from tests.struct_tree_out import print_tree
+path = 'D:\\aprojectPython\\pythonProject\\easy-media-utils'
+print_tree(path)
+</details>
+
+```
+easy-media-utils/
+|
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── setup.py
+├── base_model/
+│   ├── MediaHandler.py
+│   ├── __init__.py
+│   └── __pycache__/
+├── build/
+├── dist/
+├── easy_media_utils.egg-info/
+├── image_utils/
+│   ├── __init__.py
+│   ├── gpt_prompt.md
+│   ├── __pycache__/
+│   ├── converters/
+│   │   ├── __init__.py
+│   │   ├── format_converter.py
+│   │   ├── image_to_text.py
+│   │   ├── text_add_to_image.py
+│   │   └── __pycache__/
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── exceptions.py
+│   │   ├── image_handler.py
+│   │   └── __pycache__/
+│   ├── editors/
+│   │   ├── __init__.py
+│   │   ├── cropper.py
+│   │   └── resizer.py
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── test_converters.py
+│   │   ├── test_editors.py
+│   │   ├── test_utils.py
+│   │   └── __pycache__/
+│   └── utils/
+│       ├── __init__.py
+│       └── image_utils.py
+├── mp3_utils/
+│   ├── __init__.py
+│   ├── gpt_prompt.md
+│   ├── __pycache__/
+│   ├── converters/
+│   │   ├── __init__.py
+│   │   ├── audio_format_converter.py
+│   │   ├── mp3_to_text.py
+│   │   └── __pycache__/
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── exceptions.py
+│   │   ├── mp3_handler.py
+│   │   └── __pycache__/
+│   ├── editors/
+│   │   ├── __init__.py
+│   │   ├── effects.py
+│   │   └── trimmer.py
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── test_converters.py
+│   │   └── test_editors.py
+│   └── utils/
+│       ├── __init__.py
+│       └── mp3_utils.py
+├── mp4_utils/
+│   ├── __init__.py
+│   ├── gpt_prompt.md
+│   ├── __pycache__/
+│   ├── converters/
+│   │   ├── __init__.py
+│   │   ├── mp4_to_gif.py
+│   │   ├── mp4_to_mp3.py
+│   │   ├── mp4_to_pngs.py
+│   │   ├── tv_to_mp4.py
+│   │   └── __pycache__/
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── exceptions.py
+│   │   ├── mp4_handler.py
+│   │   └── __pycache__/
+│   ├── editors/
+│   │   ├── __init__.py
+│   │   ├── orientation.py
+│   │   └── resizer.py
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── test_converters.py
+│   │   └── test_editors.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── file_utils.py
+│       ├── mp4_utils.py
+│       └── __pycache__/
+├── testfiles/
+│   └── out/
+├── tests/
+│   ├── __init__.py
+│   └── struct_tree_out.py
+└── venv/
+```
+
 ### e.g.
 
 ```mp4
