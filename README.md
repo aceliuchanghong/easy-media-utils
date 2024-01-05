@@ -58,7 +58,9 @@ ffmpeg -version
 <details>
 <summary>项目结构生成(点击展开) </summary>
 from tests.struct_tree_out import print_tree
+
 path = 'D:\\aprojectPython\\pythonProject\\easy-media-utils'
+
 print_tree(path)
 </details>
 
