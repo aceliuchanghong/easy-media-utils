@@ -59,7 +59,7 @@ ffmpeg -version
 <summary>项目结构生成(点击展开) </summary>
 from utils.struct_tree_out import print_tree
 
-path = 'D:\\aprojectPython\\pythonProject\\easy-media-utils'
+path = r'D:\aprojectPython\pythonProject\easy-media-utils'
 
 print_tree(path)
 </details>
@@ -73,26 +73,19 @@ easy-media-utils/
 ├── setup.py
 ├── base_model/
 │   ├── MediaHandler.py
-│   ├── __init__.py
-│   └── __pycache__/
-├── build/
-├── dist/
-├── easy_media_utils.egg-info/
+│   └── __init__.py
 ├── image_utils/
 │   ├── __init__.py
 │   ├── gpt_prompt.md
-│   ├── __pycache__/
 │   ├── converters/
 │   │   ├── __init__.py
 │   │   ├── format_converter.py
 │   │   ├── image_to_text.py
-│   │   ├── text_add_to_image.py
-│   │   └── __pycache__/
+│   │   └── text_add_to_image.py
 │   ├── core/
 │   │   ├── __init__.py
 │   │   ├── exceptions.py
-│   │   ├── image_handler.py
-│   │   └── __pycache__/
+│   │   └── image_handler.py
 │   ├── editors/
 │   │   ├── __init__.py
 │   │   ├── cropper.py
@@ -101,25 +94,21 @@ easy-media-utils/
 │   │   ├── __init__.py
 │   │   ├── test_converters.py
 │   │   ├── test_editors.py
-│   │   ├── test_utils.py
-│   │   └── __pycache__/
+│   │   └── test_utils.py
 │   └── utils/
 │       ├── __init__.py
 │       └── image_utils.py
 ├── mp3_utils/
 │   ├── __init__.py
 │   ├── gpt_prompt.md
-│   ├── __pycache__/
 │   ├── converters/
 │   │   ├── __init__.py
 │   │   ├── audio_format_converter.py
-│   │   ├── mp3_to_text.py
-│   │   └── __pycache__/
+│   │   └── mp3_to_text.py
 │   ├── core/
 │   │   ├── __init__.py
 │   │   ├── exceptions.py
-│   │   ├── mp3_handler.py
-│   │   └── __pycache__/
+│   │   └── mp3_handler.py
 │   ├── editors/
 │   │   ├── __init__.py
 │   │   ├── effects.py
@@ -134,19 +123,16 @@ easy-media-utils/
 ├── mp4_utils/
 │   ├── __init__.py
 │   ├── gpt_prompt.md
-│   ├── __pycache__/
 │   ├── converters/
 │   │   ├── __init__.py
 │   │   ├── mp4_to_gif.py
 │   │   ├── mp4_to_mp3.py
 │   │   ├── mp4_to_pngs.py
-│   │   ├── tv_to_mp4.py
-│   │   └── __pycache__/
+│   │   └── tv_to_mp4.py
 │   ├── core/
 │   │   ├── __init__.py
 │   │   ├── exceptions.py
-│   │   ├── mp4_handler.py
-│   │   └── __pycache__/
+│   │   └── mp4_handler.py
 │   ├── editors/
 │   │   ├── __init__.py
 │   │   ├── orientation.py
@@ -158,14 +144,11 @@ easy-media-utils/
 │   └── utils/
 │       ├── __init__.py
 │       ├── file_utils.py
-│       ├── mp4_utils.py
-│       └── __pycache__/
+│       └── mp4_utils.py
 ├── testfiles/
-│   └── out/
-├── tests/
-│   ├── __init__.py
-│   └── struct_tree_out.py
-└── venv/
+└── utils/
+    ├── __init__.py
+    └── struct_tree_out.py
 ```
 
 ### e.g.
