@@ -1,6 +1,6 @@
 ## image-utils
 
-When I am dealing pics,mp3,mp4.. I always want a media utils to help me work, that's why this project start
+When I am dealing pics,mp3,mp4. I always want a media utils to help me work, that's why this project start
 
 ### mp4处理
 
@@ -57,7 +57,7 @@ ffmpeg -version
 
 <details>
 <summary>项目结构生成(点击展开) </summary>
-from utils.struct_tree_out import print_tree
+from tree_utils.struct_tree_out import print_tree
 
 path = r'D:\aprojectPython\pythonProject\easy-media-utils'
 
@@ -146,7 +146,7 @@ easy-media-utils/
 │       ├── file_utils.py
 │       └── mp4_utils.py
 ├── testfiles/
-└── utils/
+└── tree_utils/
     ├── __init__.py
     └── struct_tree_out.py
 ```

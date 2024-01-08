@@ -78,5 +78,5 @@ def print_tree(directory=None, prefix='', ignore_patterns=None, root_directory=N
 
 if __name__ == "__main__":
     exclude_dirs_set = {'directory1', 'directory2'}
-    now = 'D:\\aprojectPython\\pythonProject\\easy-media-utils'
+    now = r'D:\aprojectPython\pythonProject\easy-media-utils'
     print_tree(now, exclude_dirs=exclude_dirs_set)
